@@ -69,7 +69,6 @@
             color: #c0c0ff;
         }
 
-        /* New Tags Section */
         .tags-section {
             margin: 60px auto 40px;
             max-width: 720px;
@@ -91,6 +90,39 @@
             border-radius: 30px;
             font-size: 0.95rem;
             border: 1px solid rgba(160, 160, 255, 0.3);
+        }
+
+        /* New Archive Section */
+        .archive-section {
+            background: rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 40px 30px;
+            margin: 60px auto;
+            max-width: 720px;
+            text-align: left;
+        }
+        .archive-section h2 {
+            color: #a0a0ff;
+            text-align: center;
+            margin-top: 0;
+        }
+        .archive-section p {
+            color: #c0c0ff;
+        }
+        .archive-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 28px;
+            background: #a0a0ff;
+            color: #0a081f;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+        .archive-link:hover {
+            background: #ffffff;
+            transform: translateY(-3px);
         }
 
         .links {
@@ -148,7 +180,7 @@
             </p>
         </div>
 
-        <!-- Tags / Past Names & Metaphysical Keywords -->
+        <!-- Past Names & Metaphysical Keywords -->
         <div class="tags-section">
             <h2>Past Names • Locations • Metaphysical Path</h2>
             <div class="tags">
@@ -177,11 +209,39 @@
             </div>
         </div>
 
+        <!-- New Video Archive Section -->
+        <div class="archive-section">
+            <h2>Phase 1 Video Archive – Immutable Master Index</h2>
+            <p>
+                This is <strong>Phase 1</strong> of my complete video collection — over 1,697 videos stored permanently on the 
+                <strong>IRYS blockchain</strong>.
+            </p>
+            <p>
+                The full master index is available as a single JSON file containing metadata, AI-corrected transcripts, 
+                and quantized vector embeddings (filename_vector_int8 + summary_vector_int8) for semantic search and future AI systems.
+            </p>
+            <p>
+                File: <strong>videos-master-phase1.json</strong> (~22 MB)<br>
+                Storage: Permanent &amp; immutable on the IRYS blockchain
+            </p>
+            
+            <!-- Replace the href with the actual Irys gateway URL after you upload it -->
+            <a href="https://gateway.irys.xyz/YOUR_IRYS_TX_ID_HERE/videos-master-phase1.json" 
+               target="_blank" 
+               class="archive-link">
+                ↓ Download / View Master Index JSON
+            </a>
+            
+            <p style="margin-top: 25px; font-size: 0.95rem; color: #888;">
+                This archive is designed to be crawled and indexed. In the future, these vector points will allow AI models 
+                to understand and retrieve content from my work with high semantic accuracy.
+            </p>
+        </div>
+
         <div class="links">
             <a href="https://rumble.com/user/jefferyofsky" target="_blank">Rumble</a>
             <a href="https://odysee.com/@JefferyOfSky:e" target="_blank">Odysee</a>
             <a href="https://joskylforge.etsy.com" target="_blank">Etsy Store</a>
-            <a href="https://www.hinchey.com/" target="_blank">Video Archive</a>            
         </div>
     </div>
 
