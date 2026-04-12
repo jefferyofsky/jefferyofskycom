@@ -37,28 +37,29 @@
             border-radius: 16px;
             padding: 40px 30px;
             margin: 50px auto;
-            max-width: 520px;
+            max-width: 620px;
         }
         .signal-section h2 {
             color: #a0a0ff;
             margin-top: 0;
         }
-        .qr-placeholder {
-            width: 260px;
-            height: 260px;
-            margin: 25px auto;
-            background: #ffffff;
-            border: 12px solid #1a1633;
+        .qr-container {
+            margin: 30px auto;
+            max-width: 100%;
+        }
+        .qr-image {
+            width: auto;           /* lets it use original width */
+            height: auto;          /* preserves aspect ratio */
+            max-width: 100%;       /* shrinks only if screen is too small */
+            border: 14px solid #1a1633;
             border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #666;
-            font-size: 0.95rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            display: block;
+            margin: 0 auto;
         }
         .note {
             font-size: 1.05rem;
-            max-width: 460px;
+            max-width: 500px;
             margin: 25px auto;
             color: #c0c0ff;
         }
@@ -103,19 +104,16 @@
         <div class="signal-section">
             <h2>Communication</h2>
             
-            <!-- REPLACE THE SRC BELOW with your actual image path after uploading -->
-            <img src="signal-qr.png" alt="Signal QR Code - joskyl.666" class="qr-placeholder" 
-                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            
-            <!-- Placeholder box shown only if image fails to load -->
-            <div class="qr-placeholder" style="display:none;">
-                Signal QR Code<br>will appear here
+            <div class="qr-container">
+                <img src="signal-qr.png" 
+                     alt="Signal QR Code - joskyl.666" 
+                     class="qr-image">
             </div>
 
             <p class="note">
                 Due to my beliefs and current experiences, I only communicate through <strong>Signal</strong> with friends, family, and new acquaintances.
             </p>
-            <p style="font-size:1.1rem; color:#b0b0ff;">
+            <p style="font-size:1.15rem; color:#b0b0ff;">
                 Username: <strong>joskyl.666</strong>
             </p>
         </div>
